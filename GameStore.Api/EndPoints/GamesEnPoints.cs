@@ -30,7 +30,8 @@ namespace GameStore.Api.EndPoints
 
         public static RouteGroupBuilder MapGamesEndpoints(this WebApplication app)
         {
-            var group = app.MapGroup("games");
+            var group = app.MapGroup("games")
+                .WithParameterValidation();
 
 
             // GET /games
@@ -47,6 +48,8 @@ namespace GameStore.Api.EndPoints
             //POST /games
             group.MapPost("/", (CreateGameDto newGame) =>
             {
+
+
                 GameDto game = new(
                     games.Count + 1,
                     newGame.Name,

@@ -19,3 +19,4 @@
 # System files
 .DS_Store
 Thumbs.db
+GameStore.Api/GameStore.db

@@ -8,6 +8,13 @@ namespace GameStore.Api.Data
     {
         public DbSet<Game> Games => Set<Game>();
         public DbSet<Genre> Genres => Set<Genre>();
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Genre>().HasData(
+                    new { Id = 1, Name = "Racing"},
+                    new { Id = 2, Name = "Football"}
+                );
+        }
 
     }
 }

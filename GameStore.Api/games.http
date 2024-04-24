@@ -8,9 +8,9 @@ POST http://localhost:5273/games
 Content-Type: application/json
 
 {
-  "name": "Minecraft",
-  "genre": "Kidss and Family",
-  "price": 19.99,
+  "name": "Minecraft II",
+  "genreId": "1",
+  "price": 29.99,
   "releaseDate": "2011-11-18"
 }
 

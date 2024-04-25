@@ -8,7 +8,7 @@ POST http://localhost:5273/games
 Content-Type: application/json
 
 {
-  "name": "Minecraft II",
+  "name": "Minecraft III",
   "genreId": "1",
   "price": 29.99,
   "releaseDate": "2011-11-18"

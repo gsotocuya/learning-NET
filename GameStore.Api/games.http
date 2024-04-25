@@ -1,7 +1,7 @@
 GET http://localhost:5273/games
 
 ###
-GET http://localhost:5273/games/1
+GET http://localhost:5273/games/6
 
 ###
 POST http://localhost:5273/games
@@ -15,12 +15,12 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:5273/games/1
+PUT http://localhost:5273/games/6
 Content-Type: application/json
 
 {
     "name": "Street Figther II FULL",
-    "genre": "FFighting",
+    "genreId": 1,
     "price": 39.99,
     "releaseDate": "2000-07-15"
 }

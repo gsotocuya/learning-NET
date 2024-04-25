@@ -22,7 +22,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.MapGamesEndpoints();
+app.MapGenresEndPoints();
 
-app.MigrateDb();
+await app.MigrateDbAsync();
 
 app.Run();

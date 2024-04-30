@@ -15,6 +15,8 @@ builder.Services.AddSqlite<ApplicationDbContext>(
 
 var app = builder.Build();
 
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NBaF5cXmZCe0xxWmFZfVpgdl9FZVZVQmY/P1ZhSXxXdkFgWX5ac3FRQGZZVkU=");
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
